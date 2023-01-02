@@ -130,14 +130,16 @@ let arrayChange = [];
 for (let index = 0; index < arrayAmount; index++) {
     // const element = array[index];
     if(finances[index +1]){
-        let b = (finances[index][1])
-        let a = (finances[index + 1][1])
-        // console.log (b)
-        // console.log (a)
-        // console.log( a-b);
-        let c = a-b;
+        let preMonth = (finances[index][1])
+        let curMonth = (finances[index + 1][1])
+
+        // let from = (finances[index][0])
+        let to = (finances[index +1][0])
+
+    
+        let changeDiff = curMonth-preMonth;
         //  changeArr = ((finances[index + 1][1]) - (finances[index][1]));
-        arrayChange.push(c);
+        arrayChange.push({  to ,  changeDiff });
         // console.log(changeArr);   
         // console.log(index);
     }
@@ -145,10 +147,11 @@ for (let index = 0; index < arrayAmount; index++) {
 
 // console.log(arrayChange);
 
-const averageChange = arrayChange.reduce((a, b) => a + b, 0) / arrayChange.length;
+const averageChange = arrayChange.reduce((a, b) => a + b.changeDiff, 0) / arrayChange.length;
+
 const sortedArray = arrayChange.sort((a,b) => a-b);
 
-console.log(sortedArray);
+console.log(sortedArray); 
 
 
 console.log("Financial Analysis");
@@ -156,7 +159,7 @@ console.log("=====================");
 console.log("Total Months: " + arrayAmount);
 console.log("Total amount: $" + profits);
 console.log("Average change: " , averageChange.toFixed(2));
-console.log(`Total amount: $${profits}`);
+// console.log(`Total amount: $${sortedArray}`);
 // The average of the changes in Profit / Losses over the entire period.
 // You will need to track what the total change in profits are from month to month and then find the average.
 // (Total / Number of months)

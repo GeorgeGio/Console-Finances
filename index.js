@@ -98,7 +98,7 @@ var finances = [
 
   
   let arrayAmount = finances.length;
-  console.log(arrayAmount);
+  // console.log(arrayAmount);
 
 
 
@@ -122,7 +122,7 @@ for (let i = 0; i < arrayAmount; i++) {
     profits += amount;
 }
 
-console.log("total amount " + profits);
+// console.log("total amount " + profits);
 
 
 let arrayChange = [];
@@ -134,20 +134,25 @@ for (let index = 0; index < arrayAmount; index++) {
         let a = (finances[index + 1][1])
         // console.log (b)
         // console.log (a)
-        console.log( a-b);
+        // console.log( a-b);
         let c = a-b;
         //  changeArr = ((finances[index + 1][1]) - (finances[index][1]));
         arrayChange.push(c);
         // console.log(changeArr);   
-        console.log(index);
+        // console.log(index);
     }
 }
 
-console.log(arrayChange);
+// console.log(arrayChange);
 
 const averageChange = arrayChange.reduce((a, b) => a + b, 0) / arrayChange.length;
 
-console.log("average change " , averageChange.toFixed(2));
+
+console.log("Financial Analysis");
+console.log("=====================");
+console.log("Total Months: " + arrayAmount);
+console.log("total amount: " + profits);
+console.log("average change: " , averageChange.toFixed(2));
 // The average of the changes in Profit / Losses over the entire period.
 // You will need to track what the total change in profits are from month to month and then find the average.
 // (Total / Number of months)

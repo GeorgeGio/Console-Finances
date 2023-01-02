@@ -149,7 +149,7 @@ for (let index = 0; index < arrayAmount; index++) {
 
 const averageChange = arrayChange.reduce((a, b) => a + b.changeDiff, 0) / arrayChange.length;
 
-const sortedArray = arrayChange.sort((a,b) => a-b);
+const sortedArray = arrayChange.sort((a,b) => a.changeDiff-b.changeDiff);
 
 console.log(sortedArray); 
 
@@ -159,6 +159,9 @@ console.log("=====================");
 console.log("Total Months: " + arrayAmount);
 console.log("Total amount: $" + profits);
 console.log("Average change: " , averageChange.toFixed(2));
+console.log("Greatest Increase: " + sortedArray[sortedArray.length -1].to + " $"+sortedArray[sortedArray.length -1].changeDiff);
+console.log("Greatest Decrease: " + sortedArray[0].to + " $"+sortedArray[0].changeDiff);
+
 // console.log(`Total amount: $${sortedArray}`);
 // The average of the changes in Profit / Losses over the entire period.
 // You will need to track what the total change in profits are from month to month and then find the average.

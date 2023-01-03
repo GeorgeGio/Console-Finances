@@ -151,7 +151,7 @@ const averageChange = arrayChange.reduce((a, b) => a + b.changeDiff, 0) / arrayC
 
 const sortedArray = arrayChange.sort((a,b) => a.changeDiff-b.changeDiff);
 
-console.log(sortedArray); 
+// console.log(sortedArray); 
 
 
 console.log("Financial Analysis");

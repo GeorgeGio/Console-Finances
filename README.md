@@ -28,7 +28,7 @@ This will showcase the ability to tackle a real-life situation which our skills 
 ![Screenshot of Target solutions](../Console-Financies/images/image%20(9).png)
 
 ## Actual Representation of Portfolio page 
-![Current Page of Finance page showing Console -solution](../Console-Financies/images/georgegio.github.io_Console-Finances_.png)
+![Current Page of Finance page showing Console -solution](../Console-Financies/images/georgegio.github.io_Console-Finances_.jpg)
 
 
 ## Installation

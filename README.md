@@ -25,10 +25,10 @@ This will showcase the ability to tackle a real-life situation which our skills 
 <br>
 
 ## Demo Representation of ideal Portfolio webpage
-![Screenshot of Target solutions](../Console-Financies/images/image%20(9).png)
+![Screenshot of Target solutions](./images/image%20(9).png)
 
 ## Actual Representation of Portfolio page 
-![Current Page of Finance page showing Console -solution](../Console-Financies/images/georgegio.github.io_Console-Finances_.jpg)
+![Current Page of Finance page showing Console -solution](./images/georgegio.github.io_Console-Finances_.jpg)
 
 
 ## Installation
